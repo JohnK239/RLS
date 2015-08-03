@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C6456DA1B6ED8450030E8A7 /* Rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7C6456D81B6ED8450030E8A7 /* Rain.sks */; };
+		7C6456DB1B6ED8450030E8A7 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6456D91B6ED8450030E8A7 /* spark.png */; };
+		7C6456DD1B6EDD7C0030E8A7 /* Snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7C6456DC1B6EDD7C0030E8A7 /* Snow.sks */; };
+		7CF95E0A1B6AA672004A76B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF95E091B6AA672004A76B7 /* main.m */; };
+		7CF95E0D1B6AA672004A76B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF95E0C1B6AA672004A76B7 /* AppDelegate.m */; };
+		7CF95E101B6AA672004A76B7 /* CoverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF95E0F1B6AA672004A76B7 /* CoverScene.m */; };
+		7CF95E121B6AA672004A76B7 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7CF95E111B6AA672004A76B7 /* GameScene.sks */; };
+		7CF95E151B6AA672004A76B7 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF95E141B6AA672004A76B7 /* GameViewController.m */; };
+		7CF95E181B6AA672004A76B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CF95E161B6AA672004A76B7 /* Main.storyboard */; };
+		7CF95E1A1B6AA672004A76B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CF95E191B6AA672004A76B7 /* Images.xcassets */; };
+		7CF95E1D1B6AA672004A76B7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CF95E1B1B6AA672004A76B7 /* LaunchScreen.xib */; };
+		7CF95E291B6AA672004A76B7 /* RLSSKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF95E281B6AA672004A76B7 /* RLSSKTests.m */; };
+		7CF95E341B6AAB38004A76B7 /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF95E331B6AAB38004A76B7 /* MenuScene.m */; };
+		7CF95E371B6AB488004A76B7 /* SongLyricsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF95E361B6AB488004A76B7 /* SongLyricsScene.m */; };
+		7CF95E3A1B6AB5A0004A76B7 /* LyricsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF95E391B6AB5A0004A76B7 /* LyricsModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CF95E231B6AA672004A76B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CF95DFC1B6AA672004A76B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CF95E031B6AA672004A76B7;
+			remoteInfo = RLSSK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7C6456D81B6ED8450030E8A7 /* Rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Rain.sks; sourceTree = "<group>"; };
+		7C6456D91B6ED8450030E8A7 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		7C6456DC1B6EDD7C0030E8A7 /* Snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Snow.sks; sourceTree = "<group>"; };
+		7CF95E041B6AA672004A76B7 /* RLSSK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RLSSK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF95E081B6AA672004A76B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CF95E091B6AA672004A76B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7CF95E0B1B6AA672004A76B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7CF95E0C1B6AA672004A76B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7CF95E0E1B6AA672004A76B7 /* CoverScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverScene.h; sourceTree = "<group>"; };
+		7CF95E0F1B6AA672004A76B7 /* CoverScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverScene.m; sourceTree = "<group>"; };
+		7CF95E111B6AA672004A76B7 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		7CF95E131B6AA672004A76B7 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		7CF95E141B6AA672004A76B7 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		7CF95E171B6AA672004A76B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CF95E191B6AA672004A76B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7CF95E1C1B6AA672004A76B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7CF95E221B6AA672004A76B7 /* RLSSKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RLSSKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF95E271B6AA672004A76B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CF95E281B6AA672004A76B7 /* RLSSKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLSSKTests.m; sourceTree = "<group>"; };
+		7CF95E321B6AAB38004A76B7 /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
+		7CF95E331B6AAB38004A76B7 /* MenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuScene.m; sourceTree = "<group>"; };
+		7CF95E351B6AB488004A76B7 /* SongLyricsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongLyricsScene.h; sourceTree = "<group>"; };
+		7CF95E361B6AB488004A76B7 /* SongLyricsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongLyricsScene.m; sourceTree = "<group>"; };
+		7CF95E381B6AB5A0004A76B7 /* LyricsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricsModel.h; sourceTree = "<group>"; };
+		7CF95E391B6AB5A0004A76B7 /* LyricsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricsModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CF95E011B6AA672004A76B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF95E1F1B6AA672004A76B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C6456D61B6ED7F10030E8A7 /* EmitterNodes */ = {
+			isa = PBXGroup;
+			children = (
+				7C6456D81B6ED8450030E8A7 /* Rain.sks */,
+				7C6456D91B6ED8450030E8A7 /* spark.png */,
+				7C6456DC1B6EDD7C0030E8A7 /* Snow.sks */,
+			);
+			name = EmitterNodes;
+			sourceTree = "<group>";
+		};
+		7C6456D71B6ED8010030E8A7 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7CF95E0E1B6AA672004A76B7 /* CoverScene.h */,
+				7CF95E0F1B6AA672004A76B7 /* CoverScene.m */,
+				7CF95E321B6AAB38004A76B7 /* MenuScene.h */,
+				7CF95E331B6AAB38004A76B7 /* MenuScene.m */,
+				7CF95E351B6AB488004A76B7 /* SongLyricsScene.h */,
+				7CF95E361B6AB488004A76B7 /* SongLyricsScene.m */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		7CF95DFB1B6AA672004A76B7 = {
+			isa = PBXGroup;
+			children = (
+				7CF95E061B6AA672004A76B7 /* RLSSK */,
+				7CF95E251B6AA672004A76B7 /* RLSSKTests */,
+				7CF95E051B6AA672004A76B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CF95E051B6AA672004A76B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CF95E041B6AA672004A76B7 /* RLSSK.app */,
+				7CF95E221B6AA672004A76B7 /* RLSSKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CF95E061B6AA672004A76B7 /* RLSSK */ = {
+			isa = PBXGroup;
+			children = (
+				7CF95E0B1B6AA672004A76B7 /* AppDelegate.h */,
+				7CF95E0C1B6AA672004A76B7 /* AppDelegate.m */,
+				7C6456D71B6ED8010030E8A7 /* Scenes */,
+				7CF95E381B6AB5A0004A76B7 /* LyricsModel.h */,
+				7CF95E391B6AB5A0004A76B7 /* LyricsModel.m */,
+				7C6456D61B6ED7F10030E8A7 /* EmitterNodes */,
+				7CF95E111B6AA672004A76B7 /* GameScene.sks */,
+				7CF95E191B6AA672004A76B7 /* Images.xcassets */,
+				7CF95E071B6AA672004A76B7 /* Supporting Files */,
+			);
+			path = RLSSK;
+			sourceTree = "<group>";
+		};
+		7CF95E071B6AA672004A76B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CF95E131B6AA672004A76B7 /* GameViewController.h */,
+				7CF95E141B6AA672004A76B7 /* GameViewController.m */,
+				7CF95E161B6AA672004A76B7 /* Main.storyboard */,
+				7CF95E1B1B6AA672004A76B7 /* LaunchScreen.xib */,
+				7CF95E081B6AA672004A76B7 /* Info.plist */,
+				7CF95E091B6AA672004A76B7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CF95E251B6AA672004A76B7 /* RLSSKTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CF95E281B6AA672004A76B7 /* RLSSKTests.m */,
+				7CF95E261B6AA672004A76B7 /* Supporting Files */,
+			);
+			path = RLSSKTests;
+			sourceTree = "<group>";
+		};
+		7CF95E261B6AA672004A76B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CF95E271B6AA672004A76B7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CF95E031B6AA672004A76B7 /* RLSSK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CF95E2C1B6AA672004A76B7 /* Build configuration list for PBXNativeTarget "RLSSK" */;
+			buildPhases = (
+				7CF95E001B6AA672004A76B7 /* Sources */,
+				7CF95E011B6AA672004A76B7 /* Frameworks */,
+				7CF95E021B6AA672004A76B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RLSSK;
+			productName = RLSSK;
+			productReference = 7CF95E041B6AA672004A76B7 /* RLSSK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CF95E211B6AA672004A76B7 /* RLSSKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CF95E2F1B6AA672004A76B7 /* Build configuration list for PBXNativeTarget "RLSSKTests" */;
+			buildPhases = (
+				7CF95E1E1B6AA672004A76B7 /* Sources */,
+				7CF95E1F1B6AA672004A76B7 /* Frameworks */,
+				7CF95E201B6AA672004A76B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CF95E241B6AA672004A76B7 /* PBXTargetDependency */,
+			);
+			name = RLSSKTests;
+			productName = RLSSKTests;
+			productReference = 7CF95E221B6AA672004A76B7 /* RLSSKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CF95DFC1B6AA672004A76B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Giving Tree";
+				TargetAttributes = {
+					7CF95E031B6AA672004A76B7 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					7CF95E211B6AA672004A76B7 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 7CF95E031B6AA672004A76B7;
+					};
+				};
+			};
+			buildConfigurationList = 7CF95DFF1B6AA672004A76B7 /* Build configuration list for PBXProject "RLSSK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CF95DFB1B6AA672004A76B7;
+			productRefGroup = 7CF95E051B6AA672004A76B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CF95E031B6AA672004A76B7 /* RLSSK */,
+				7CF95E211B6AA672004A76B7 /* RLSSKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CF95E021B6AA672004A76B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF95E1D1B6AA672004A76B7 /* LaunchScreen.xib in Resources */,
+				7C6456DB1B6ED8450030E8A7 /* spark.png in Resources */,
+				7CF95E1A1B6AA672004A76B7 /* Images.xcassets in Resources */,
+				7CF95E121B6AA672004A76B7 /* GameScene.sks in Resources */,
+				7C6456DA1B6ED8450030E8A7 /* Rain.sks in Resources */,
+				7C6456DD1B6EDD7C0030E8A7 /* Snow.sks in Resources */,
+				7CF95E181B6AA672004A76B7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF95E201B6AA672004A76B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CF95E001B6AA672004A76B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF95E151B6AA672004A76B7 /* GameViewController.m in Sources */,
+				7CF95E3A1B6AB5A0004A76B7 /* LyricsModel.m in Sources */,
+				7CF95E371B6AB488004A76B7 /* SongLyricsScene.m in Sources */,
+				7CF95E341B6AAB38004A76B7 /* MenuScene.m in Sources */,
+				7CF95E0D1B6AA672004A76B7 /* AppDelegate.m in Sources */,
+				7CF95E101B6AA672004A76B7 /* CoverScene.m in Sources */,
+				7CF95E0A1B6AA672004A76B7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF95E1E1B6AA672004A76B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF95E291B6AA672004A76B7 /* RLSSKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CF95E241B6AA672004A76B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CF95E031B6AA672004A76B7 /* RLSSK */;
+			targetProxy = 7CF95E231B6AA672004A76B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7CF95E161B6AA672004A76B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CF95E171B6AA672004A76B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7CF95E1B1B6AA672004A76B7 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CF95E1C1B6AA672004A76B7 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CF95E2A1B6AA672004A76B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		7CF95E2B1B6AA672004A76B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CF95E2D1B6AA672004A76B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RLSSK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7CF95E2E1B6AA672004A76B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RLSSK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7CF95E301B6AA672004A76B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RLSSKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RLSSK.app/RLSSK";
+			};
+			name = Debug;
+		};
+		7CF95E311B6AA672004A76B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RLSSKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RLSSK.app/RLSSK";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CF95DFF1B6AA672004A76B7 /* Build configuration list for PBXProject "RLSSK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF95E2A1B6AA672004A76B7 /* Debug */,
+				7CF95E2B1B6AA672004A76B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CF95E2C1B6AA672004A76B7 /* Build configuration list for PBXNativeTarget "RLSSK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF95E2D1B6AA672004A76B7 /* Debug */,
+				7CF95E2E1B6AA672004A76B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CF95E2F1B6AA672004A76B7 /* Build configuration list for PBXNativeTarget "RLSSKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF95E301B6AA672004A76B7 /* Debug */,
+				7CF95E311B6AA672004A76B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CF95DFC1B6AA672004A76B7 /* Project object */;
+}

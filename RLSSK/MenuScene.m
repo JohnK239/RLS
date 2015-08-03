@@ -1,0 +1,195 @@
+//
+//  MenuScene.m
+//  RLSSK
+//
+//  Created by Michael Vilabrera on 7/30/15.
+//  Copyright (c) 2015 Giving Tree. All rights reserved.
+//
+
+#import "MenuScene.h"
+#import "SongLyricsScene.h"
+
+typedef NS_ENUM(NSUInteger, titleButton){
+    swingButton,
+    shadowButton,
+    railwayButton,
+    moonButton,
+    windyButton,
+    sunButton,
+    boatButton,
+    rainButton,
+    winterButton,
+    counterpaneButton,
+};
+
+@interface MenuScene()
+
+@end
+
+@implementation MenuScene
+
+-(instancetype)initWithSize:(CGSize)size {
+    self = [super initWithSize:size];
+    if (self) {
+        [self loadButtons];
+    }
+    return self;
+}
+
+-(void)didMoveToView:(SKView *)view {
+    /* Setup your scene here */
+    
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    /* Called when a touch begins */
+    UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInNode:self];
+    SKNode *node = [self nodeAtPoint:location];
+    
+    NSInteger songNumber = [node.name integerValue];
+    
+    SKTransition *transition = [SKTransition crossFadeWithDuration:0.5];
+    SKScene *nextScene = [[SongLyricsScene alloc] initWithSize:self.size];
+    
+    switch (songNumber) {
+        case 0:
+            // first button pressed
+            nextScene = [[SwingScene alloc] initWithSize:self.size];
+            [self.view presentScene:nextScene transition:transition];
+            break;
+        case 1:
+            // second button pressed
+            nextScene = [[ShadowScene alloc] initWithSize:self.size];
+            [self.view presentScene:nextScene transition:transition];
+            break;
+        case 2:
+            // third button pressed
+            nextScene = [[RailwayScene alloc] initWithSize:self.size];
+            [self.view presentScene:nextScene transition:transition];
+            break;
+        case 3:
+            // fourth button pressed
+            nextScene = [[MoonScene alloc] initWithSize:self.size];
+            [self.view presentScene:nextScene transition:transition];
+            break;
+        case 4:
+            // fifth button pressed
+            nextScene = [[WindyScene alloc] initWithSize:self.size];
+            [self.view presentScene:nextScene transition:transition];
+            break;
+        case 5:
+            // sixth button pressed
+            nextScene = [[SunScene alloc] initWithSize:self.size];
+            [self.view presentScene:nextScene transition:transition];
+            break;
+        case 6:
+            // seventh button pressed
+            nextScene = [[BoatScene alloc] initWithSize:self.size];
+            [self.view presentScene:nextScene transition:transition];
+            break;
+        case 7:
+            // eigth button pressed
+            nextScene = [[RainScene alloc] initWithSize:self.size];
+            [self.view presentScene:nextScene transition:transition];
+            break;
+        case 8:
+            // ninth button pressed
+            nextScene = [[WinterScene alloc] initWithSize:self.size];
+            [self.view presentScene:nextScene transition:transition];
+            break;
+        case 9:
+            // final button pressed
+            nextScene = [[CounterpaneScene alloc] initWithSize:self.size];
+            [self.view presentScene:nextScene transition:transition];
+            break;
+        default:
+            break;
+    }
+}
+
+-(void)update:(CFTimeInterval)currentTime {
+    /* Called before each frame is rendered */
+}
+
+-(void)loadButtons {
+    SKSpriteNode *swingButton = [SKSpriteNode spriteNodeWithColor:[UIColor grayColor] size:CGSizeMake(300, 90)];
+//    swingButton.name = @"swingButton";
+    swingButton.name = @"0";
+
+    swingButton.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) + 450);
+    SKLabelNode *swingLabel = [SKLabelNode labelNodeWithText:@"THE SWING"];
+    [swingButton addChild:swingLabel];
+    [self addChild:swingButton];
+    
+    SKSpriteNode *shadowButton = [SKSpriteNode spriteNodeWithColor:[UIColor grayColor] size:CGSizeMake(300, 90)];
+    shadowButton.name = @"1";
+    shadowButton.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) + 350);
+    SKLabelNode *shadowLabel = [SKLabelNode labelNodeWithText:@"MY SHADOW"];
+    [shadowButton addChild:shadowLabel];
+    [self addChild:shadowButton];
+    
+    SKSpriteNode *railwayButton = [SKSpriteNode spriteNodeWithColor:[UIColor grayColor] size:CGSizeMake(300, 90)];
+    railwayButton.name = @"2";
+    railwayButton.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) + 250);
+    SKLabelNode *railwayLabel = [SKLabelNode labelNodeWithText:@"FROM A RAILWAY CARRIAGE"];
+    [railwayButton addChild:railwayLabel];
+    [self addChild:railwayButton];
+    
+    SKSpriteNode *moonButton = [SKSpriteNode spriteNodeWithColor:[UIColor grayColor] size:CGSizeMake(300, 90)];
+    moonButton.name = @"3";
+    moonButton.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) + 150);
+    SKLabelNode *moonLabel = [SKLabelNode labelNodeWithText:@"THE MOON"];
+    [moonButton addChild:moonLabel];
+    [self addChild:moonButton];
+    
+    SKSpriteNode *windyButton = [SKSpriteNode spriteNodeWithColor:[UIColor grayColor] size:CGSizeMake(300, 90)];
+    windyButton.name = @"4";
+    windyButton.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) + 50);
+    SKLabelNode *windyLabel = [SKLabelNode labelNodeWithText:@"WINDY NIGHTS"];
+    [windyButton addChild:windyLabel];
+    [self addChild:windyButton];
+    
+    SKSpriteNode *sunButton = [SKSpriteNode spriteNodeWithColor:[UIColor grayColor] size:CGSizeMake(300, 90)];
+    sunButton.name = @"5";
+    sunButton.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) - 50);
+    SKLabelNode *sunLabel = [SKLabelNode labelNodeWithText:@"THE SUN'S TRAVELS"];
+    [sunButton addChild:sunLabel];
+    [self addChild:sunButton];
+    
+    SKSpriteNode *boatButton = [SKSpriteNode spriteNodeWithColor:[UIColor grayColor] size:CGSizeMake(300, 90)];
+    boatButton.name = @"6";
+    boatButton.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) - 150);
+    SKLabelNode *boatLabel = [SKLabelNode labelNodeWithText:@"WHERE GO THE BOATS?"];
+    [boatButton addChild:boatLabel];
+    [self addChild:boatButton];
+    
+    SKSpriteNode *rainButton = [SKSpriteNode spriteNodeWithColor:[UIColor grayColor] size:CGSizeMake(300, 90)];
+    rainButton.name = @"7";
+    rainButton.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) - 250);
+    SKLabelNode *rainLabel = [SKLabelNode labelNodeWithText:@"RAIN"];
+    [rainButton addChild:rainLabel];
+    [self addChild:rainButton];
+    
+    SKSpriteNode *winterButton = [SKSpriteNode spriteNodeWithColor:[UIColor grayColor] size:CGSizeMake(300, 90)];
+    winterButton.name = @"8";
+    winterButton.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) - 350);
+    SKLabelNode *winterLabel = [SKLabelNode labelNodeWithText:@"WINTER-TIME"];
+    [winterButton addChild:winterLabel];
+    [self addChild:winterButton];
+    
+    SKSpriteNode *counterpaneButton = [SKSpriteNode spriteNodeWithColor:[UIColor grayColor] size:CGSizeMake(300, 90)];
+    counterpaneButton.name = @"9";
+    counterpaneButton.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) - 450);
+    SKLabelNode *counterpaneLabel = [SKLabelNode labelNodeWithText:@"LAND OF COUNTERPANE"];
+    [counterpaneButton addChild:counterpaneLabel];
+    [self addChild:counterpaneButton];
+}
+
+-(void)loadSongLyricsScene {
+    SKTransition *reveal = [SKTransition fadeWithDuration:1.5];
+    SongLyricsScene *menuScene = [SongLyricsScene sceneWithSize:self.frame.size];
+    [self.view presentScene:menuScene transition:reveal];
+}
+
+@end
