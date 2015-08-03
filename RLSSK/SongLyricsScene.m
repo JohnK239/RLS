@@ -170,13 +170,13 @@
 
 @implementation RainScene
 
-//-(instancetype)initWithSize:(CGSize)size {
-//    if (self = [super initWithSize:size]) {
-//        LyricsModel *lyricsModel = [[LyricsModel alloc] init];
-//        [self createCustomLabel:[lyricsModel h_rainLyrics]];
-//    }
-//    return self;
-//}
+-(instancetype)initWithSize:(CGSize)size {
+    if (self = [super initWithSize:size]) {
+        LyricsModel *lyricsModel = [[LyricsModel alloc] init];
+        [self createCustomLabel:[lyricsModel h_rainLyrics]];
+    }
+    return self;
+}
 
 -(void)didMoveToView:(SKView *)view {
     SKEmitterNode *rain = [NSKeyedUnarchiver unarchiveObjectWithFile:[[NSBundle mainBundle] pathForResource:@"Rain" ofType:@"sks"]];
@@ -189,13 +189,13 @@
 
 @implementation WinterScene
 
-//-(instancetype)initWithSize:(CGSize)size {
-//    if (self = [super initWithSize:size]) {
-//        LyricsModel *lyricsModel = [[LyricsModel alloc] init];
-//        [self createCustomLabel:[lyricsModel h_wintertimeLyrics]];
-//    }
-//    return self;
-//}
+-(instancetype)initWithSize:(CGSize)size {
+    if (self = [super initWithSize:size]) {
+        LyricsModel *lyricsModel = [[LyricsModel alloc] init];
+        [self createCustomLabel:[lyricsModel h_wintertimeLyrics]];
+    }
+    return self;
+}
 
 -(void)didMoveToView:(SKView *)view {
     SKEmitterNode *rain = [NSKeyedUnarchiver unarchiveObjectWithFile:[[NSBundle mainBundle] pathForResource:@"Snow" ofType:@"sks"]];
