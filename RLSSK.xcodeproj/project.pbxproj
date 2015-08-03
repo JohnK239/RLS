@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		612E0CBA1B6FCA7F005B9F42 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = 612E0CB91B6FCA7F005B9F42 /* Audio */; };
 		7C6456DA1B6ED8450030E8A7 /* Rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7C6456D81B6ED8450030E8A7 /* Rain.sks */; };
 		7C6456DB1B6ED8450030E8A7 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6456D91B6ED8450030E8A7 /* spark.png */; };
 		7C6456DD1B6EDD7C0030E8A7 /* Snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7C6456DC1B6EDD7C0030E8A7 /* Snow.sks */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		612E0CB91B6FCA7F005B9F42 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = "<group>"; };
 		7C6456D81B6ED8450030E8A7 /* Rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Rain.sks; sourceTree = "<group>"; };
 		7C6456D91B6ED8450030E8A7 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		7C6456DC1B6EDD7C0030E8A7 /* Snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Snow.sks; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				7CF95E0B1B6AA672004A76B7 /* AppDelegate.h */,
 				7CF95E0C1B6AA672004A76B7 /* AppDelegate.m */,
+				612E0CB91B6FCA7F005B9F42 /* Audio */,
 				7C6456D71B6ED8010030E8A7 /* Scenes */,
 				7CF95E381B6AB5A0004A76B7 /* LyricsModel.h */,
 				7CF95E391B6AB5A0004A76B7 /* LyricsModel.m */,
@@ -254,6 +257,7 @@
 				7C6456DA1B6ED8450030E8A7 /* Rain.sks in Resources */,
 				7C6456DD1B6EDD7C0030E8A7 /* Snow.sks in Resources */,
 				7CF95E181B6AA672004A76B7 /* Main.storyboard in Resources */,
+				612E0CBA1B6FCA7F005B9F42 /* Audio in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
